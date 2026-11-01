@@ -23,9 +23,9 @@ def emotion_detector(text_to_analyze):
         if float(y) > temp:
            temp = y
            dominant_emotion = x
-        #print("x: ",x," y: ",y)
-        #print(float(y), " ",temp)
     
     emotion['dominant_emotion'] = dominant_emotion
-    print(emotion)
+
+    return emotion #dominant_emotion
+    #print(emotion)
     
